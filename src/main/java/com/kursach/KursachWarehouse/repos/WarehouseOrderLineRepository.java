@@ -4,12 +4,12 @@ import com.kursach.KursachWarehouse.domain.*;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
+import java.util.Optional;
 
-public interface WarehouseOrderLineRepository extends CrudRepository<WarehouseOrderLine,Integer> {
-
+public interface WarehouseOrderLineRepository extends CrudRepository<WarehouseOrderLine,Long> {
     List<WarehouseOrderLine> findWarehouseOrderLineByWarehouseOrder_Id(Long tag);
     WarehouseOrderLine findByWarehouseOrder_Id(Long tag);
     List<WarehouseOrderLine> findByUser_Id(Long tag);
-    WarehouseOrderLine findById(Long tag);
-    Integer deleteById(Long tag);
+    Optional<WarehouseOrderLine> findById(Long tag);
+    void deleteById(Long tag);
 }

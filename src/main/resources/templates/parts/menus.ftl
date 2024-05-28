@@ -16,6 +16,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/QRcode">QR код</a>
                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="/help">Помощь</a>
+                </li>
             </ul>
             <ul class="nav navbar-nav ml-auto">
                 <form action="/logout" method="post">
