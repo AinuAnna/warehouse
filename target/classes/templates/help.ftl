@@ -2,6 +2,7 @@
 <#import "parts/menus.ftl" as menus>
 
 <@common.page>
+    <@menus.adminNav/>
         <!-- Карусель -->
         <div class="row" style="text-align: center; margin-top: 3vh;">
             <div class="col-12">
