@@ -14,4 +14,10 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+                $('h2').css('color', 'green');
+                $('.featurette-heading, h5').hide().fadeIn(2000);
+        });
+    </script>
 </@common.page>
